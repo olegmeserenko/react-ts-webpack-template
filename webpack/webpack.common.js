@@ -12,11 +12,7 @@ module.exports = {
       {
         test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader',
-          },
-        ],
+        use: ['babel-loader', 'ts-loader'],
       },
       {
         test: /\.(scss|css)$/,
